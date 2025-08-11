@@ -32,13 +32,37 @@
         },        
         {
             "name": "inString",
-            "type": "string"
+            "type": "string",
+            "allowed": [ 
+                "ONE",
+                "TWO",
+                "THREE"
+            ]
+            "required": true
+        },
+        {
+            "name": "inInteger",
+            "type": "integer"
+            "required": true
+        },
+        {
+            "name": "inBoolean",
+            "type": "boolean",
+            "required": true
         }
     ],
     "outputs": [
         {
            "name": "outSting",
            "type": "string"
+        },
+                {
+            "name": "outInteger",
+            "type": "integer"
+        },
+        {
+            "name": "outBoolean",
+            "type": "boolean"
         }
     ]
 }
