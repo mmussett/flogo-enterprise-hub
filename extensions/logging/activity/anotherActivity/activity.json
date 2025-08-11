@@ -2,7 +2,7 @@
     "name": "anotherActivity",
     "version": "1.0.0",
     "type": "flogo:activity",
-    "title": "logging anotherActivity",
+    "title": "anotherActivity",
     "author": "TIBCO Developer Hub",
     "display": {
         "category": "logging",
