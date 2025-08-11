@@ -24,19 +24,7 @@
         "required": true
         }
     ],
-    "inputs": [
-        {
-            "name": "logging Connection",
-            "type": "connection",
-            "required": true,
-            "allowed": [],
-            "display": {
-                "name": "logging Connection",
-                "description": "Select logging Connection",
-                "type": "connection",
-                "selection": "single"
-            }
-        },        
+    "inputs": [        
         {
         "name": "anInput",
         "type": "string",
