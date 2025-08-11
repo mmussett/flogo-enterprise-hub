@@ -17,6 +17,13 @@
         }
     },
     "ref": "github.com//flogo-enterprise-hub/extensions/logging/activity/anotherActivity",
+    "settings": [
+        {
+        "name": "aSetting",
+        "type": "string",
+        "required": true
+        }
+    ],
     "inputs": [
         {
             "name": "logging Connection",
@@ -31,38 +38,15 @@
             }
         },        
         {
-            "name": "inString",
-            "type": "string",
-            "allowed": [ 
-                "ONE",
-                "TWO",
-                "THREE"
-            ]
-            "required": true
-        },
-        {
-            "name": "inInteger",
-            "type": "integer"
-            "required": true
-        },
-        {
-            "name": "inBoolean",
-            "type": "boolean",
-            "required": true
+        "name": "anInput",
+        "type": "string",
+        "required": true
         }
     ],
     "outputs": [
         {
-           "name": "outSting",
+           "name": "anOutput",
            "type": "string"
-        },
-                {
-            "name": "outInteger",
-            "type": "integer"
-        },
-        {
-            "name": "outBoolean",
-            "type": "boolean"
         }
     ]
 }

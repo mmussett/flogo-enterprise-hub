@@ -13,12 +13,7 @@ The Input Settings tab has the following fields:
 
 | Field	| Type | Required	| Description |
 |-------|------|-----------|-------------|
-| inString  | string | yes | a string field  |
-| inInteger | integer | yes | an integer field |
-| inBoolean | boolean | yes | a boolean field |
-| inDecimal | decimal | yes | a decimal field |
-| inDate | date | yes | a date field |
-| inAny | any | no | any field |
+| anInput  | string | yes | a string field  |
 
 
 
@@ -32,12 +27,8 @@ The Output Settings tab has the following field:
 
 | Field	| Type | Description |
 |-------|-----------|-------------|
-| outString  | string | a string field  |
-| outInteger | integer | an integer field |
-| outBoolean | boolean | a boolean field |
-| outDecimal | decimal | a decimal field |
-| outDate | date | a date field |
-| outAny | any | any field |
+| anOutput  | string | a string field  |
+
 
 ## Loop
 
