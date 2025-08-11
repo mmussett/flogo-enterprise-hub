@@ -1,19 +1,18 @@
 # TIBCO Flogo® Extension for logger 
 
-## anotherActivity
+## Activity anotherActivity
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dapibus molestie elit, in maximus justo sagittis ut. Aenean id placerat mi, vel aliquet quam. Vivamus at sollicitudin ligula, vel accumsan est. Etiam imperdiet elit quis nunc facilisis, ut sodales diam tincidunt. Donec sit amet feugiat metus. In convallis dictum magna a iaculis. Ut consequat magna nec nunc congue vulputate a ac felis. Etiam a commodo arcu. Donec semper urna vel facilisis suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
 
 ## Settings
 
-None
 
-## Input Settings
+### Input Settings
 
 The Input Settings tab has the following fields:
 
 | Field	| Type | Required	| Description |
-|-------|-----------|-------------|
+|-------|------|-----------|-------------|
 | inString  | string | yes | a string field  |
 | inInteger | integer | yes | an integer field |
 | inBoolean | boolean | yes | a boolean field |
@@ -23,22 +22,22 @@ The Input Settings tab has the following fields:
 
 
 
-## Input
+### Input
 
 None
 
 
-## Output Settings
+### Output Settings
 The Output Settings tab has the following field:
 
 | Field	| Type | Description |
 |-------|-----------|-------------|
-| inString  | string | a string field  |
-| inInteger | integer | an integer field |
-| inBoolean | boolean | a boolean field |
-| inDecimal | decimal | a decimal field |
-| inDate | date | a date field |
-| inAny | any | any field |
+| outString  | string | a string field  |
+| outInteger | integer | an integer field |
+| outBoolean | boolean | a boolean field |
+| outDecimal | decimal | a decimal field |
+| outDate | date | a date field |
+| outAny | any | any field |
 
 ## Loop
 

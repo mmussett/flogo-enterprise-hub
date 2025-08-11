@@ -1,0 +1,44 @@
+{
+    "name": "myActivity",
+    "version": "1.0.0",
+    "type": "flogo:activity",
+    "title": " myActivity",
+    "author": "TIBCO Developer Hub",
+    "display": {
+        "category": "",
+        "visible": true,
+        "description": "This activity executes run operation on a SSH server",
+        "smallIcon": "icons/activity-icon@2x.png",
+		"largeIcon": "icons/activity-icon@3x.png"
+    },
+    "feature": {
+        "retry": {
+            "enabled": true
+        }
+    },
+    "ref": "github.com//flogo-enterprise-hub/extensions//activity/myActivity",
+    "inputs": [
+        {
+            "name": " Connection",
+            "type": "connection",
+            "required": true,
+            "allowed": [],
+            "display": {
+                "name": " Connection",
+                "description": "Select  Connection",
+                "type": "connection",
+                "selection": "single"
+            }
+        },        
+        {
+            "name": "inString",
+            "type": "string"
+        }
+    ],
+    "outputs": [
+        {
+           "name": "outSting",
+           "type": "string"
+        }
+    ]
+}
