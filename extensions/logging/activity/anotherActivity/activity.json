@@ -2,10 +2,10 @@
     "name": "anotherActivity",
     "version": "1.0.0",
     "type": "flogo:activity",
-    "title": " anotherActivity",
+    "title": "logging anotherActivity",
     "author": "TIBCO Developer Hub",
     "display": {
-        "category": "",
+        "category": "logging",
         "visible": true,
         "description": "This activity executes run operation on a SSH server",
         "smallIcon": "icons/activity-icon@2x.png",
@@ -16,16 +16,16 @@
             "enabled": true
         }
     },
-    "ref": "github.com//flogo-enterprise-hub/extensions//activity/anotherActivity",
+    "ref": "github.com//flogo-enterprise-hub/extensions/logging/activity/anotherActivity",
     "inputs": [
         {
-            "name": " Connection",
+            "name": "logging Connection",
             "type": "connection",
             "required": true,
             "allowed": [],
             "display": {
-                "name": " Connection",
-                "description": "Select  Connection",
+                "name": "logging Connection",
+                "description": "Select logging Connection",
                 "type": "connection",
                 "selection": "single"
             }
