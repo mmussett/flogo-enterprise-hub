@@ -16,19 +16,27 @@
             "enabled": true
         }
     },
-    "ref": "github.com//flogo-enterprise-hub/extensions/logging/activity/anotherActivity",
+    "ref": "github.com/mmussett/flogo-enterprise-hub/extensions/logging/activity/anotherActivity",
     "settings": [
         {
-        "name": "aSetting",
-        "type": "string",
-        "required": true
+            "name": "aSetting",
+            "type": "string",
+            "required": true,
+            "description": "Change this description",
+            "display": {
+                "name": "aSetting",
+                "description": "Change this discription",
+                "required": true,
+                "type":"string",
+                "appPropertySupport": true
+            }
         }
     ],
     "inputs": [        
         {
-        "name": "anInput",
-        "type": "string",
-        "required": true
+            "name": "anInput",
+            "type": "string",
+            "required": true
         }
     ],
     "outputs": [
