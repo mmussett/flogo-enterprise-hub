@@ -31,19 +31,19 @@
                 "type":"string",
                 "appPropertySupport": true
             }
-        },
+        }
     ],
     "inputs": [        
         {
             "name": "anInputString",
             "type": "string",
             "required": true
-        },
+        }
     ],
     "outputs": [
         {
            "name": "anOutputString",
            "type": "string"
-        },
+        }
     ]
 }
