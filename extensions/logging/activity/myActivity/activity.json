@@ -43,8 +43,7 @@
                 "description": "Example of a boolean setting",
                 "visible": true
             }
-        }       
-        ,
+        }
     ],
     "inputs": [        
         {
