@@ -3,7 +3,7 @@ package myActivity
 import "github.com/project-flogo/core/data/coerce"
 
 type Settings struct {
-	ASetting string `md:"aSetting,required"`
+	ASettingString string `md:"aSettingString,required"`
 }
 
 type Input struct {

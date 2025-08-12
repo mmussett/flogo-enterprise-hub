@@ -43,6 +43,24 @@
                 "description": "Example of a boolean setting",
                 "visible": true
             }
+        }       
+        ,
+        {
+            "name": "aSettingStringDropdown",
+            "type": "string",
+            "required": true,
+            "allowed": [
+                "Option 1",
+                "Option 2",
+                "Option 3"
+            ],
+            "value": "Option 1",
+            "display": {
+                "name": "A dropdown setting",
+                "description": "Example of a Setting Dropdown.",
+                "type": "dropdown",
+                "selection": "single"
+            }
         }
     ],
     "inputs": [        
@@ -56,6 +74,49 @@
             "name": "anInputBoolean",
             "type": "boolean",
             "required": true
+        }          
+        ,
+        {
+            "name": "anInputInteger",
+            "type": "integer",
+            "required": true
+        }   
+        ,
+        {
+            "name": "anInputDecimal",
+            "type": "number",
+            "required": true
+        }           
+        ,
+        {
+            "name": "anObject",
+            "type": "object"
+        }                   
+        ,
+        {
+            "name": "anInputObjectWithSchema",
+            "type": "object",
+            "required": true,
+            "display": {
+                "name": "JSON Schema",
+                "description": "An example JSON-based object",
+                "type": "texteditor",
+                "syntax": "json",
+                "mappable": true,
+                "visible": true
+            }
+        }                           
+        ,
+        {
+            "name": "anInputParameters",
+            "type": "object",
+            "display": {
+                "name": "Parameters",
+                "description": "An example Parameter-based object",
+                "type": "params",
+                "mappable": true,
+                "schema": "{\"type\": \"array\",\"items\": {\"type\": \"object\",\"properties\": {\"parameterName\": {\"type\": \"string\"},\"type\": {\"type\": {\"enum\": [\"string\"]}}}}}"
+            }
         }
     ],
     "outputs": [
@@ -67,6 +128,27 @@
         {
             "name": "anOutputBoolean",
             "type": "boolean"
+        }               
+        ,
+        {
+            "name": "anOutputDecimal",
+            "type": "number"
+        }          
+        ,
+        {
+           "name": "anOutputObject",
+           "type": "object"
+        }          
+        ,
+        {
+            "name": "anOutputObjectWithSchema",
+            "type": "object",
+            "display": {
+                "name": "JSON Schema",
+                "description": "An example JSON object",
+                "type": "texteditor",
+                "syntax": "json"
+            }
         }
     ]
 }
