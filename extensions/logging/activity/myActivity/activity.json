@@ -7,7 +7,7 @@
     "display": {
         "category": "logging",
         "visible": true,
-        "description": "This activity executes run operation on a SSH server",
+        "description": "",
         "smallIcon": "icons/activity-icon@2x.png",
 		"largeIcon": "icons/activity-icon@3x.png"
     },

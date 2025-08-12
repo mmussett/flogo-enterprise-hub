@@ -1,4 +1,4 @@
-package logging
+package myActivity
 
 import (
 	"github.com/project-flogo/core/activity"
