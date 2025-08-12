@@ -19,30 +19,31 @@
     "ref": "github.com/mmussett/flogo-enterprise-hub/extensions/logging/activity/anotherActivity",
     "settings": [
         {
-            "name": "aSetting",
+            "name": "aSettingString",
             "type": "string",
             "required": true,
-            "description": "Change this description",
+            "description": "A string setting",
+            "value":"Default_Value",
             "display": {
-                "name": "aSetting",
-                "description": "Change this discription",
+                "name": "A string setting",
+                "description": "Example of a string setting",
                 "required": true,
                 "type":"string",
                 "appPropertySupport": true
             }
-        }
+        },
     ],
     "inputs": [        
         {
-            "name": "anInput",
+            "name": "anInputString",
             "type": "string",
             "required": true
-        }
+        },
     ],
     "outputs": [
         {
-           "name": "anOutput",
+           "name": "anOutputString",
            "type": "string"
-        }
+        },
     ]
 }
