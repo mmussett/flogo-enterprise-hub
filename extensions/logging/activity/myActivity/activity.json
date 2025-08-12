@@ -31,12 +31,31 @@
                 "type":"string",
                 "appPropertySupport": true
             }
-        }
+        }       
+        ,
+        {
+            "name": "aSettingBoolean",
+            "type": "boolean",
+            "required": true,
+            "value": false,
+            "display": {
+                "name": "A boolean setting",
+                "description": "Example of a boolean setting",
+                "visible": true
+            }
+        }       
+        ,
     ],
     "inputs": [        
         {
             "name": "anInputString",
             "type": "string",
+            "required": true
+        }                       
+        ,
+        {
+            "name": "anInputBoolean",
+            "type": "boolean",
             "required": true
         }
     ],
@@ -44,6 +63,11 @@
         {
            "name": "anOutputString",
            "type": "string"
+        }                       
+        ,
+        {
+            "name": "anOutputBoolean",
+            "type": "boolean"
         }
     ]
 }
