@@ -1,5 +1,7 @@
 package myActivity
 
+package anotherActivity
+
 import "github.com/project-flogo/core/data/coerce"
 
 type Settings struct {
@@ -7,33 +9,30 @@ type Settings struct {
 }
 
 type Input struct {
-	AnInput string `md:"anInput,required"`
 }
 
-func (r *Input) FromMap(values map[string]interface{}) error {
-	strVal, _ := coerce.ToString(values["anInput"])
-	r.AnInput = strVal
+func (i *Input) FromMap(values map[string]interface{}) error {
+	var err error
+
 	return nil
 }
 
-func (r *Input) ToMap() map[string]interface{} {
+func (i *Input) ToMap() map[string]interface{} {
+
 	return map[string]interface{}{
-		"anInput": r.AnInput,
-	}
+
 }
 
 type Output struct {
-	AnOutput string `md:"anOutput"`
 }
 
 func (o *Output) FromMap(values map[string]interface{}) error {
-	strVal, _ := coerce.ToString(values["anOutput"])
-	o.AnOutput = strVal
+	var err error
+
 	return nil
 }
 
 func (o *Output) ToMap() map[string]interface{} {
 	return map[string]interface{}{
-		"anOutput": o.AnOutput,
 	}
 }
