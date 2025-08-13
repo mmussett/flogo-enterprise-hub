@@ -22,13 +22,15 @@ func New(ctx activity.InitContext) (activity.Activity, error) {
 
 	ctx.Logger().Debugf("Setting: %s", s.ASettingString)
 
-	act := &Activity{} //add aSetting to instance
+	act := &Activity{logger: log.ChildLogger(ctx.Logger(), "logging-myActivity"), activityName: "myActivity"} //add aSetting to instance
 
 	return act, nil
 }
 
 // Activity is an sample Activity that can be used as a base to create a custom activity
-type Activity struct {
+type MyActivity struct {
+	logger       log.Logger
+	activityName string
 }
 
 // Metadata returns the activity's metadata
