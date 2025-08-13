@@ -7,8 +7,13 @@ type Settings struct {
 }
 
 type Input struct { 
-	AnInputString           string                 `md:"anInputString,required"`
+	AnInputString string `md:"anInputString,required"`
 }
+
+type Output struct {
+	AnOutputString           string                 `md:"anOutputString,required"`
+}
+
 
 func (i *Input) FromMap(values map[string]interface{}) error {
 	var err error 
@@ -24,12 +29,11 @@ func (i *Input) ToMap() map[string]interface{} {
 
 	return map[string]interface{}{ 
 		"AnInputString":           i.AnInputString,
+	}
+
 
 }
 
-type Output struct {
-	AnOutputString           string                 `md:"anOutputString,required"`
-}
 
 func (o *Output) FromMap(values map[string]interface{}) error {
 	var err error
