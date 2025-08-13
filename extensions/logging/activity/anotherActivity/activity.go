@@ -3,6 +3,7 @@ package anotherActivity
 import (
 	"github.com/project-flogo/core/activity"
 	"github.com/project-flogo/core/data/metadata"
+	"github.com/project-flogo/core/support/log"
 )
 
 func init() {
@@ -28,7 +29,7 @@ func New(ctx activity.InitContext) (activity.Activity, error) {
 }
 
 // Activity is an sample Activity that can be used as a base to create a custom activity
-type MyActivity struct {
+type Activity struct {
 	logger       log.Logger
 	activityName string
 }
