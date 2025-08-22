@@ -1,0 +1,26 @@
+{
+	"title": "logTailFollower Trigger",
+	"name": "logTailFollower",
+	"author": "Created by Flogo Extension Generator",
+	"version": "1.2.2",
+	"type": "flogo:trigger",
+	"display": {
+		"description": "logTailFollower trigger",
+		"category": "logging",
+		"visible": true,
+		"smallIcon": "icons/trigger-icon@2x.png",
+		"largeIcon": "icons/trigger-icon@3x.png",
+		"tags": ["logging"]
+	},
+	"ref": "github.com/mmussett/flogo-enterprise-hub/extensions/logger/trigger/logTailFollower",
+	"handler": {
+		"settings": [	
+		]
+	},
+ 	"outputs": [
+        {
+           "name": "anOutputString",
+           "type": "string"
+        }
+  	]
+}
