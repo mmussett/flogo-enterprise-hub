@@ -16,74 +16,69 @@
 	"handler": {
 		"settings": [
 			{
-                "name": "Dropdown Setting",
+                "name": "aSettingString",
+                "type": "string",
+                "display": {
+                    "name": "String",
+				    "description": "This description appears on tooltip hover.",
+					"required": true,
+                    "type": "string",
+                    "appPropertySupport": true
+                },
+                "value": ""
+            }
+			,
+			{
+				"name": "aSettingBoolean",
+				"type": "boolean",
+				"display": {
+					"name": "Boolean",
+					"description": "This description appears on tooltip hover."
+				},
+				"value": false,
+				"required": true
+			}       
+        ,
+			{
+                "name": "aSettingStringDropdown",
                 "type": "string",
                 "required": true,
                 "display": {
                     "name": "Dropdown Options",
-                    "description": "Dropdown settings option",
+                    "description": "This description appears on tooltip hover.",
                     "type": "dropdown",
                     "selection": "single"
                 },
                 "value": "Timer",
                 "allowed": [
                     "Option 1",
-                    "Option 2"
+                    "Option 2",
+					"Option 3"
                 ]
-            },
+            }       
+			,       
 			{
-				"name": "Date Time Setting",
+				"name": "aSettingDateTime",
 				"type": "string",
 				"display": {
 					"name": "Date Time",
 					"type": "dateTime",
-					"description": "Date time setting",
+					"description": "This description appears on tooltip hover.",
 					"appPropertySupport": true
 				}
-			},
+			}       
+			,       
 			{
-				"name": "Boolean Setting",
-				"type": "boolean",
-				"display": {
-					"name": "Boolean",
-					"description": "Boolean setting"
-				},
-				"value": false,
-				"required": true
-			},
-			{
-				"name": "Integer Setting",
+				"name": "aSettingInteger",
 				"type": "integer",
 				"display": {
 					"name": "Integer",
-					"description": "Integer setting",
+					"description": "This description appears on tooltip hover.",
 					"appPropertySupport": true
 				},
 				"value": 1,
 				"required": true
-			},
-       	 	{
-            	"name": "anInputDecimal",
-            	"type": "number",
-				"display": {
-					"name": "Numeric",
-					"description": "Numeric setting",
-					"appPropertySupport": true
-				},
-				"value": 1.0,
-            	"required": true
-        	},
-			{
-                "name": "String Setting",
-                "type": "string",
-                "display": {
-                    "name": "String",
-                    "type": "string",
-                    "description": "String setting.",
-                    "appPropertySupport": true
-                },
-                "value": ""
-            }
+			}
 		]
 	}
 }
