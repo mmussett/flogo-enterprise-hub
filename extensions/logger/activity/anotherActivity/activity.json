@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "type": "flogo:activity",
     "title": "anotherActivity",
-    "author": "TIBCO Developer Hub",
+    "author": "Created by Flogo Extension Generator",
     "display": {
         "category": "logging",
         "visible": true,
