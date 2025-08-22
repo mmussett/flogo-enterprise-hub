@@ -1,0 +1,48 @@
+{
+	"title": "logFollower Trigger",
+	"name": "logFollower",
+	"author": "Created by Flogo Extension Generator",
+	"version": "1.2.2",
+	"type": "flogo:trigger",
+	"display": {
+		"description": "logFollower trigger",
+		"category": "logging",
+		"visible": true,
+		"smallIcon": "icons/trigger-icon@2x.png",
+		"largeIcon": "icons/trigger-icon@3x.png",
+    	"wizard": [
+      		"Configurations"
+    	],
+		"tags": ["logging"]
+	},
+	"ref": "github.com/mmussett/flogo-enterprise-hub/extensions/logger/trigger/logFollower",
+	"handler": {
+		"settings": [
+			{
+                "name": "aSettingString",
+                "type": "string",
+                "display": {
+                    "name": "String",
+				    "description": "This description appears on tooltip hover.",
+					"required": true,
+                    "type": "string",
+                    "appPropertySupport": true
+                },       
+				"wizard": {
+          			"step": "Configurations"
+        		}
+            }	
+		]
+	},
+ 	"outputs": [
+    	{
+        	"name": "output",
+        	"type": "object"
+    	}
+  	],
+  	"actions": [
+    {
+      		"name": "Finish"
+    }
+  ]
+}
