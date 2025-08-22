@@ -1,0 +1,89 @@
+{
+	"title": "logTailFollower Trigger",
+	"name": "logTailFollower",
+	"author": "Created by Flogo Extension Generator",
+	"version": "1.2.2",
+	"type": "flogo:trigger",
+	"display": {
+		"description": "logTailFollower trigger",
+		"category": "logging",
+		"visible": true,
+		"smallIcon": "icons/trigger-icon@2x.png",
+		"largeIcon": "icons/trigger-icon@3x.png"
+	},
+	"ref": "github.com/mmussett/flogo-enterprise-hub/extensions/logger/trigger/logTailFollower",
+	"settings": [],
+	"handler": {
+		"settings": [
+			{
+                "name": "Dropdown Setting",
+                "type": "string",
+                "required": true,
+                "display": {
+                    "name": "Dropdown Options",
+                    "description": "Dropdown settings option",
+                    "type": "dropdown",
+                    "selection": "single"
+                },
+                "value": "Timer",
+                "allowed": [
+                    "Option 1",
+                    "Option 2"
+                ]
+            },
+			{
+				"name": "Date Time Setting",
+				"type": "string",
+				"display": {
+					"name": "Date Time",
+					"type": "dateTime",
+					"description": "Date time setting",
+					"appPropertySupport": true
+				}
+			},
+			{
+				"name": "Boolean Setting",
+				"type": "boolean",
+				"display": {
+					"name": "Boolean",
+					"description": "Boolean setting"
+				},
+				"value": false,
+				"required": true
+			},
+			{
+				"name": "Integer Setting",
+				"type": "integer",
+				"display": {
+					"name": "Integer",
+					"description": "Integer setting",
+					"appPropertySupport": true
+				},
+				"value": 1,
+				"required": true
+			},
+       	 	{
+            	"name": "anInputDecimal",
+            	"type": "number",
+				"display": {
+					"name": "Numeric",
+					"description": "Numeric setting",
+					"appPropertySupport": true
+				},
+				"value": 1.0,
+            	"required": true
+        	},
+			{
+                "name": "String Setting",
+                "type": "string",
+                "display": {
+                    "name": "String",
+                    "type": "string",
+                    "description": "String setting.",
+                    "appPropertySupport": true
+                },
+                "value": ""
+            }
+		]
+	}
+}
