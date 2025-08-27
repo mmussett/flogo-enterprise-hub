@@ -9,25 +9,25 @@ import (
 )
 
 func init() {
-	_ = function.Register(&%{{values.functionName}}Func{})
+	_ = function.Register(&ean13Func{})
 }
 
-type %{{values.functionName}}Func struct {
+type ean13Func struct {
 }
 
 // Name returns the name of the function
-func (%{{values.functionName}}Func) Name() string {
+func (ean13Func) Name() string {
 	return "ean13"
 }
 
 
 // GetCategory returns the function category
-func (s *%{{values.functionName}}Func) GetCategory() string {
+func (s *ean13Func) GetCategory() string {
 	return "barcode"
 }
 
 // Sig returns the function signature
-func (%{{values.functionName}}Func) Sig() (paramTypes []data.Type, isVariadic bool) {
+func (ean13Func) Sig() (paramTypes []data.Type, isVariadic bool) {
 
 	return []data.Type{data.TypeString }, false
 }
