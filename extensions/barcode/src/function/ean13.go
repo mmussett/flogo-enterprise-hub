@@ -44,7 +44,7 @@ func (ean13Func) Eval(params ...interface{}) (interface{}, error) {
 
     // Parameter coercion and validation
     // Coerce parameter 0 (barcode) to string
-    barcode, err := coerce.ToString(params[0])
+    _, err := coerce.ToString(params[0])
     if err != nil {
         return nil, fmt.Errorf("Unable to coerce parameter 0 (barcode) to string: %s", err.Error())
     }
