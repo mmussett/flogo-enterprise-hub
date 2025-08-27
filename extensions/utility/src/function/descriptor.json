@@ -1,0 +1,28 @@
+{
+  "name": "utility",
+  "type": "flogo:function",
+  "version": "1.0.0",
+  "title": "My Custom Function Utility Package",
+  "description": "My Custom Function Utility Package",
+  "functions": [
+
+    {
+      "name": "",
+      "description": "",
+      "example": "",
+      "args": [
+        {
+          "name": "jsonObject",
+          "type": "string"
+        },
+        {
+          "name": "key",
+          "type": "string"
+        }
+      ],
+      "return": {
+        "type": "bool"
+      }
+    }
+  ]
+}
