@@ -1,8 +1,8 @@
-# TIBCO Flogo® Extension for logger 
+# TIBCO Flogo® Extension for  
 
 ## Overview
 
-This extension provides the following features...
 
-Flogo logging framework
+
+Logging Connector
 
