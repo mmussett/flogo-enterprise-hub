@@ -7,21 +7,17 @@
   "functions": [
 
     {
-      "name": "",
-      "description": "",
-      "example": "",
+      "name": "ean13",
+      "description": "Calculates EAN13 checkdigit",
+      "example": "utility.ean13('012345678012') -> '8'",
       "args": [
         {
-          "name": "jsonObject",
-          "type": "string"
-        },
-        {
-          "name": "key",
+          "name": "barcode",
           "type": "string"
         }
       ],
       "return": {
-        "type": "bool"
+        "type": "string"
       }
     }
   ]
