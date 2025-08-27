@@ -29,7 +29,7 @@ func (s *ean13Func) GetCategory() string {
 // Sig returns the function signature
 func (ean13Func) Sig() (paramTypes []data.Type, isVariadic bool) {
 
-	return []data.Type{data.TypeString }, false
+	return []data.Type{data.TypeString}, false
 }
 
 // Eval executes the function
