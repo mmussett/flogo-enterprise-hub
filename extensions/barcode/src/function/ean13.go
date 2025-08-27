@@ -2,36 +2,41 @@ package  barcode
 
 import (
 	"fmt"
-
 	"github.com/project-flogo/core/data"
 	"github.com/project-flogo/core/data/coerce"
 	"github.com/project-flogo/core/data/expression/function"
+	"github.com/project-flogo/core/support/log"
 )
 
 func init() {
-	_ = function.Register(&fn{})
+	_ = function.Register(&%{{values.functionName}}Func{})
 }
 
-type fn struct {
+type %{{values.functionName}}Func struct {
 }
 
 // Name returns the name of the function
-func (fn) Name() string {
+func (%{{values.functionName}}Func) Name() string {
 	return "ean13"
 }
 
-func (s *fn) GetCategory() string {
+
+// GetCategory returns the function category
+func (s *%{{values.functionName}}Func) GetCategory() string {
 	return "barcode"
 }
 
 // Sig returns the function signature
-func (fn) Sig() (paramTypes []data.Type, isVariadic bool) {
+func (%{{values.functionName}}Func) Sig() (paramTypes []data.Type, isVariadic bool) {
 
 	return []data.Type{data.TypeString }, false
 }
 
 // Eval executes the function
 func (fn) Eval(params ...interface{}) (interface{}, error) {
+
+	log.RootLogger().Debug("Start of function ean13")
+
     // Validate parameter count
     if len(params) != 1 {
         return nil, fmt.Errorf("Expected 1 parameters, got %d", len(params))

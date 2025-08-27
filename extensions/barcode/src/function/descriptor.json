@@ -9,7 +9,7 @@
     {
       "name": "ean13",
       "description": "Calculates EAN13 checkdigit",
-      "example": "utility.ean13('012345678012') -> '8'",
+      "example": "barcode.ean13('012345678012') -> '8'",
       "args": [
         {
           "name": "barcode",
