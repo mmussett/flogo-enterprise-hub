@@ -1,0 +1,138 @@
+{
+	"name": "logger-connector",
+	"title": " Connector",
+	"author": "Created by Flogo Extension Generator",
+	"type": "flogo:connector",
+	"version": "1.0.0",
+	"display": {
+		"description": "This is a logger Connector",
+		"category": "logging",
+		"visible": true,
+		"smallIcon":"icons/connector-icon@2x.png",
+		"largeIcon":"icons/connector-icon@3x.png",
+		"connectionsupport": true
+	},
+	"ref": "github.com/mmussett/flogo-enterprise-hub/extensions/logger/connector/connection",
+	"keyfield": "Name",
+	"settings": [
+		{
+			"name": "Name",
+			"type": "string",
+			"required": true,
+			"display": {
+				"name": "Connection Name",
+				"description": "Name of the connection"
+			}
+		},
+		{
+			"name": "Description",
+			"type": "string",
+			"display": {
+				"name": "Description",
+				"description": "Connection description"
+			}
+		},		 
+		{
+			"name": "Host",
+			"type": "string",
+			"required": true,
+			"display": {
+				"name": "Host Name",
+				"description": "Connector Host Name",
+				"appPropertySupport": true
+			}
+		},
+		{
+			"name": "Port",
+			"type": "integer",
+			"required": true,
+			"display": {
+				"name": "Port",
+				"description": "Connector Port",
+				"type": " integer",
+				"visible": true,
+				"appPropertySupport": true
+			}
+		},
+		{
+			"name": "Password",
+			"type": "string",
+			"required": false,
+			"display": {
+				"name": "Password",
+				"encryptable": true,
+				"required": false,
+				"description": "Connector Password",
+				"type": "password",
+				"appPropertySupport": true
+			}
+		},
+		{
+			"name": "AuthMode",
+			"type": "boolean",
+			"required": true,
+			"value": false,
+			"display": {
+			  "name": "Secure Connection",
+			  "description": "Choose authentication mode"
+			 
+			}
+					
+		  },
+		  {
+			"name": "ClientCert",
+			"type": "string",
+			"display": {
+			  "description": "A PEM encoded certificate file",
+			  "name": "Client Certificate",
+			  "visible": false,
+			  "type": "fileselector",
+			  "fileExtensions": [
+				".pem",
+				".cert",
+				".cer",
+				".crt"
+			  ],"appPropertySupport": true
+			}
+			
+		  },
+		  {
+			"name": "ClientKey",
+			"type": "string",
+			"display": {
+			  "description": "A PEM encoded private key file",
+			  "name": "Client Key",
+			  "visible": false,
+			  "type": "fileselector",
+			  "fileExtensions": [
+				".pem",
+				".cert",
+				".cer",
+				".crt",
+				".key"
+			  ],"appPropertySupport": true
+			}
+		  },
+		  {
+			"name": "CaCert",
+			"type": "string",
+			"display": {
+			  "description": "A PEM encoded CA or Server certificate file",
+			  "name": "CA or Server Certificate",
+			  "visible": false,
+			  "type": "fileselector",
+			  "fileExtensions": [
+				".pem",
+				".cert",
+				".cer",
+				".crt"
+			  ],"appPropertySupport": true
+			}
+		  }
+	],
+	"actions": [
+		{
+			"name": "Save"
+		}
+	]
+}
