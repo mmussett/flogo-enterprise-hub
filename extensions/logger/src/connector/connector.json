@@ -1,11 +1,11 @@
 {
 	"name": "logger-connector",
-	"title": " Connector",
+	"title": "Logger Connector",
 	"author": "Created by Flogo Extension Generator",
 	"type": "flogo:connector",
 	"version": "1.0.0",
 	"display": {
-		"description": "This is a logger Connector",
+		"description": "This is a Logger Connector",
 		"category": "logging",
 		"visible": true,
 		"smallIcon":"icons/connector-icon@2x.png",
