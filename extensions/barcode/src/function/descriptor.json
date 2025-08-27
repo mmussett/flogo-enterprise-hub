@@ -1,0 +1,24 @@
+{
+  "name": "barcode",
+  "type": "flogo:function",
+  "version": "1.0.0",
+  "title": "Barcode utility functions",
+  "description": "Barcode utility functions",
+  "functions": [
+
+    {
+      "name": "ean13",
+      "description": "Generate checkdigit for a ean-13 barcode",
+      "example": "utility.ean13('012345678012') -> '8'",
+      "args": [
+        {
+          "name": "barcode",
+          "type": "string"
+        }
+      ],
+      "return": {
+        "type": "string"
+      }
+    }
+  ]
+}
