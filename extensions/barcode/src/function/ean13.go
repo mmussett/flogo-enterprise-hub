@@ -27,22 +27,21 @@ func (s *fn) GetCategory() string {
 // Sig returns the function signature
 func (fn) Sig() (paramTypes []data.Type, isVariadic bool) {
 
-	return []data.Type{data.TypeString		
-	}, false
+	return []data.Type{data.TypeString }, false
 }
 
 // Eval executes the function
 func (fn) Eval(params ...interface{}) (interface{}, error) {
     // Validate parameter count
-    if len(params) != {{ values.arguments | length }} {
-        return nil, fmt.Errorf("Expected {{ values.arguments | length }} parameters, got %d", len(params))
+    if len(params) != 1 {
+        return nil, fmt.Errorf("Expected 1 parameters, got %d", len(params))
     }
 
     // Parameter coercion and validation
-    // Coerce parameter {{ loop.index0 }} ({{ arg.argName }}) to {{ arg.argType }}
-    {{ arg.argName }}, err := coerce.ToString(params[{{ loop.index0 }}])
+    // Coerce parameter 0 (barcode) to string
+    barcode, err := coerce.ToString(params[0])
     if err != nil {
-        return nil, fmt.Errorf("Unable to coerce parameter {{ loop.index0 }} ({{ arg.argName }}) to string: %s", err.Error())
+        return nil, fmt.Errorf("Unable to coerce parameter 0 (barcode) to string: %s", err.Error())
     }
 
     // TODO: Implement your function logic here using the coerced parameters

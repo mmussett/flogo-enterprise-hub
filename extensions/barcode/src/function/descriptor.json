@@ -8,7 +8,7 @@
 
     {
       "name": "ean13",
-      "description": "Generate checkdigit for a ean-13 barcode",
+      "description": "Calculates EAN13 checkdigit",
       "example": "utility.ean13('012345678012') -> '8'",
       "args": [
         {
