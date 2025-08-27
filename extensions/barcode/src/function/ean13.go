@@ -33,7 +33,7 @@ func (ean13Func) Sig() (paramTypes []data.Type, isVariadic bool) {
 }
 
 // Eval executes the function
-func (fn) Eval(params ...interface{}) (interface{}, error) {
+func (ean13Func) Eval(params ...interface{}) (interface{}, error) {
 
 	log.RootLogger().Debug("Start of function ean13")
 
