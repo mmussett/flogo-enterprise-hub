@@ -16,7 +16,7 @@
             "enabled": true
         }
     },
-    "ref": "github.com/mmussett/flogo-enterprise-hub/extensions/logger/activity/",
+    "ref": "github.com/mmussett/flogo-enterprise-hub/extensions/logger/activity/myActivity",
     "settings": [
 
         {
@@ -38,6 +38,11 @@
 
         {
             "name": "inputField1",
+            "type": "int",
+            "required": true
+        },
+        {
+            "name": "inputField2",
             "type": "string",
             "required": true
         }
@@ -46,7 +51,7 @@
 
         {
            "name": "outputField1",
-           "type": "string"
+           "type": "boolean"
         }
     ]
 }
