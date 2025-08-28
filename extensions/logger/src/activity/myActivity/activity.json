@@ -26,7 +26,7 @@
             "description": "This is my description",
             "value":"Default_Value",
             "display": {
-                "name": "A string setting",
+                "name": "fieldName1",
                 "description": "This is my description",
                 "required": true,
                 "type":"string",
@@ -40,7 +40,6 @@
             "name": "inputField1",
             "type": "string",
             "required": true
-
         },
         {
             "name": "inputField2",
@@ -54,8 +53,6 @@
                 "mappable": true,
                 "visible": true
             }
-
-
         }
     ],
     "outputs": [
