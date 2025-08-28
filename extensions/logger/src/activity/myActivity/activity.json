@@ -19,11 +19,34 @@
     "ref": "github.com/mmussett/flogo-enterprise-hub/extensions/logger/activity/",
     "settings": [
 
+        {
+            "name": "fieldName1",
+            "type": "string",
+            "required": true,
+            "description": "Description goes here",
+            "value":"Default_Value",
+            "display": {
+                "name": "A string setting",
+                "description": "This description appears on tooltip hover.",
+                "required": true,
+                "type":"string",
+                "appPropertySupport": true
+            }
+        }
     ],
     "inputs": [
 
+        {
+            "name": "inputField1",
+            "type": "string",
+            "required": true
+        }
     ],
     "outputs": [
 
+        {
+           "name": "outputField1",
+           "type": "string"
+        }
     ]
 }
