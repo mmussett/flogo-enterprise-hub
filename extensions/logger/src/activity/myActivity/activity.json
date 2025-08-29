@@ -32,6 +32,20 @@
                 "type":"string",
                 "appPropertySupport": true
             }
+        },
+        {
+            "name": "fieldName2",
+            "type": "number",
+            "required": true,
+            "description": "sfsfsdf",
+            "value":"Default_Value",
+            "display": {
+                "name": "fieldName2",
+                "description": "sfsfsdf",
+                "required": true,
+                "type":"number",
+                "appPropertySupport": true
+            }
         }
     ],
     "inputs": [
@@ -40,12 +54,22 @@
             "name": "inputField1",
             "type": "string",
             "required": true
+        },
+        {
+            "name": "inputField2",
+            "type": "string",
+            "required": true
         }
     ],
     "outputs": [
 
         {
            "name": "outputField1",
+           "type": "string",
+           "required": true
+        },
+        {
+           "name": "outputField2",
            "type": "string",
            "required": true
         }
