@@ -40,19 +40,6 @@
             "name": "inputField1",
             "type": "string",
             "required": true
-        },
-        {
-            "name": "inputField2",
-            "type": "object",
-            "required": true,
-            "display": {
-                "name": "JSON Schema",
-                "description": "An example JSON-based object",
-                "type": "texteditor",
-                "syntax": "json",
-                "mappable": true,
-                "visible": true
-            }
         }
     ],
     "outputs": [
