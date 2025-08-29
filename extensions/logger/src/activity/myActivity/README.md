@@ -1,10 +1,13 @@
 # TIBCO Flogo® Extension for logger
-
-## Activity myActivity
-
 Flogo logging framework
 
 This extension provides the following features...
+
+## Activity myActivity
+
+myActivity is the best!
+
+This is myActivity. There are no activities like myActivity
 
 ## Settings
 
