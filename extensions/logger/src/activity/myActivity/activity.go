@@ -1,6 +1,7 @@
 package myActivity
 
 import (
+	"fmt"
 	"github.com/project-flogo/core/activity"
 	"github.com/project-flogo/core/data/metadata"
 	"github.com/project-flogo/core/support/log"
@@ -30,7 +31,7 @@ func New(ctx activity.InitContext) (activity.Activity, error) {
 	}
 	ctx.Logger().Debugf("Setting: %v", settings.Fieldname1)
 	ctx.Logger().Debugf("Setting: %v", settings.Fieldname2)
-	
+
 	act := &Activity{logger: log.ChildLogger(ctx.Logger(), "logger-myActivity"), activityName: "myActivity"}
 
 	return act, nil
@@ -56,7 +57,7 @@ func (a *Activity) Cleanup() error {
 // Eval implements api.Activity.Eval - Logs the Message
 func (a *Activity) Eval(ctx activity.Context) (done bool, err error) {
 
-	activityLog.Debugf("Executing Activity [%s] ", context.Name())
+	activityLog.Debugf("Executing Activity [%s] ", ctx.Name())
 
 	input := &Input{}
 	err = ctx.GetInputObject(input)
