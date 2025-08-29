@@ -1,14 +1,11 @@
-package  logWatcher
+package logWatcher
 
 import (
 	"github.com/project-flogo/core/data/coerce"
 )
 
 type Settings struct {
-	
-	
-    Filepath string `md:"filepath,required"`
-	
+
 }
 type HandlerSettings struct {
 	

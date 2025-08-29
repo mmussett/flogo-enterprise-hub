@@ -1,4 +1,4 @@
-package 
+package logWatcher
 
 import (
 	"fmt"
@@ -31,6 +31,7 @@ func (t *TriggerFactory) Metadata() *trigger.Metadata {
 // New Creates a new trigger instance for a given id
 func (t *TriggerFactory) New(config *trigger.Config) (trigger.Trigger, error) {
 	s := &Settings{}
+
 	err := metadata.MapToStruct(config.Settings, s, true)
 	if err != nil {
 		return nil, fmt.Errorf("error occurred in metadata.MapToStruct: [%s]", err.Error())

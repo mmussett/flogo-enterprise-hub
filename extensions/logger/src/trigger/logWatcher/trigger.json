@@ -17,17 +17,17 @@
 		"settings": [
 
         {
-            "name": "filepath",
+            "name": "handlerField1",
             "type": "string",
             "required": true,
-            "description": "Filepath to monitor for changes",
+            "description": "Handler field1",
             "value":"Default_Value",
             "display": {
-                "name": "filepath",
-                "description": "Filepath to monitor for changes",
+                "name": "handlerField1",
+                "description": "Handler field1",
                 "required": true,
                 "type":"string",
-                "appPropertySupport": true
+                "appPropertySupport": 
             }
         }
 		]
