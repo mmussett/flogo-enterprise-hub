@@ -13,7 +13,9 @@ The Settings tab has the following fields:
 
 | Field	| Type | Required	| Description |
 |-------|------|-----------|-------------|
-| fieldName1 | string | true | Lorem ipsum dolor sit amet || fieldName2 | number | true | Lorem ipsum dolor sit amet |
+| fieldName1 | string | true | Lorem ipsum dolor sit amet |
+| fieldName2 | number | true | Lorem ipsum dolor sit amet |
+
 
 ### Input Settings
 
@@ -21,7 +23,9 @@ The Input tab has the following fields:
 
 | Field	| Type | Required	| Description |
 |-------|------|-----------|-------------|
-| inputField1 | string | true | Lorem ipsum dolor sit amet || inputField2 | number | true | Lorem ipsum dolor sit amet |
+| inputField1 | string | true | Lorem ipsum dolor sit amet |
+| inputField2 | number | true | Lorem ipsum dolor sit amet |
+
 
 
 
@@ -35,7 +39,9 @@ The Output Settings tab has the following field:
 
 | Field	| Type | Description |
 |-------|-----------|-------------|
-| outputField1 | string | Lorem ipsum dolor sit amet || outputField2 | boolean | Lorem ipsum dolor sit amet |
+| outputField1 | string | Lorem ipsum dolor sit amet |
+| outputField2 | boolean | Lorem ipsum dolor sit amet |
+
 
 
 ## Loop
