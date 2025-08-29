@@ -57,7 +57,7 @@
         },
         {
             "name": "inputField2",
-            "type": "string",
+            "type": "number",
             "required": true
         }
     ],
@@ -70,7 +70,7 @@
         },
         {
            "name": "outputField2",
-           "type": "string",
+           "type": "boolean",
            "required": true
         }
     ]

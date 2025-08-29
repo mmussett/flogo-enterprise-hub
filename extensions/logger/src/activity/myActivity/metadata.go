@@ -18,7 +18,7 @@ type Input struct {
     Inputfield1 string `md:"inputField1,required"`
 		
 	
-    Inputfield2 string `md:"inputField2,required"`
+    Inputfield2 float64 `md:"inputField2,required"`
 	
 }
 
@@ -28,7 +28,7 @@ type Output struct {
     Outputfield1 string `md:"outputField1,required"`
 		
 	
-    Outputfield2 string `md:"outputField2,required"`
+    Outputfield2 bool `md:"outputField2,required"`
 	
 }
 
@@ -46,9 +46,9 @@ func (i *Input) FromMap(values map[string]interface{}) error {
 		return err
 	}
 
-	// inputField2 string 
+	// inputField2 number 
 	
-	i. Inputfield2, err = coerce.ToString(values["inputField2"])
+	i.Inputfield2, err = coerce.ToFloat64(values["inputField2"])
 	
 	if err != nil {
 		return err
@@ -79,9 +79,9 @@ func (o *Output) FromMap(values map[string]interface{}) error {
 	if err != nil {
 		return err
 	}
-	// outputField2 string 	
+	// outputField2 boolean 	
 	
-	o. Outputfield2, err = coerce.ToString(values["outputField2"])
+	o.Outputfield2, err = coerce.ToBool(values["outputField2"])
 	
 	if err != nil {
 		return err
