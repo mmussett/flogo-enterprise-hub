@@ -29,8 +29,8 @@ func New(ctx activity.InitContext) (activity.Activity, error) {
 	if err != nil {
 		return nil, err
 	}
-	ctx.Logger().Debugf("Setting: %v", settings.Fieldname1)
-	ctx.Logger().Debugf("Setting: %v", settings.Fieldname2)
+	ctx.Logger().Debugf("Setting: %v", s.Fieldname1)
+	ctx.Logger().Debugf("Setting: %v", s.Fieldname2)
 
 	act := &Activity{logger: log.ChildLogger(ctx.Logger(), "logger-myActivity"), activityName: "myActivity"}
 
@@ -78,6 +78,6 @@ func (a *Activity) Eval(ctx activity.Context) (done bool, err error) {
 		return true, err
 	}
 
-	activityLog.Debugf("Execution of Activity [%s] " + context.Name() + " completed")
+	activityLog.Debugf("Execution of Activity [%s] " + ctx.Name() + " completed")
 	return true, nil
 }
