@@ -1,20 +1,27 @@
-package 
+package  logWatcher
 
 import (
 	"github.com/project-flogo/core/data/coerce"
 )
 
 type Settings struct {
-	MyString string `md:"mystring,required"`
+	
+	
+    Filepath string `md:"filepath,required"`
+	
 }
 type HandlerSettings struct {
-	MyString  string `md:"myString"`
-	MyBoolean bool   `md:"myBoolean"`
-	MyInteger int    `md:"myInteger"`
+	
+	
+    Handlerfield1 string `md:"handlerField1,required"`
+	
 }
 
 type Output struct {
-	Output map[string]interface{} `md:"output"`
+	
+	
+    Changes string `md:"changes,required"`
+	
 }
 
 func (o *Output) ToMap() map[string]interface{} {
