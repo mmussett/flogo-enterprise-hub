@@ -31,6 +31,9 @@ func (i *Input) FromMap(values map[string]interface{}) error {
 	
 	i. Inputfield1, err = coerce.ToString(values["inputField1"])
 	
+	if err != nil {
+		return err
+	}
 
 	return nil
 }
@@ -39,7 +42,7 @@ func (i *Input) ToMap() map[string]interface{} {
 
 	return map[string]interface{}{
 
-		"Inputfield1": i.inputField1
+		"Inputfield1": i.inputField1,
 	}
 
 }
@@ -52,6 +55,9 @@ func (o *Output) FromMap(values map[string]interface{}) error {
 	
 	o. Outputfield1, err = coerce.ToString(values["outputField1"])
 	
+	if err != nil {
+		return err
+	}
 
 	return nil
 }
@@ -61,7 +67,7 @@ func (o *Output) ToMap() map[string]interface{} {
 
 	return map[string]interface{}{
 
-		"inputField1": o.Inputfield1		
+		"outputField1": o.Outputfield1,		
 	}
 
 }
