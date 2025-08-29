@@ -70,7 +70,8 @@ func (o *Output) FromMap(values map[string]interface{}) error {
 
 func (o *Output) ToMap() map[string]interface{} {
 
-	return map[string]interface{}{"outputField1": o.Outputfield1,"outputField2": o.Outputfield2,		
+	return map[string]interface{}{
+"outputField1": o.Outputfield1,"outputField2": o.Outputfield2,		
 	}
 
 }
