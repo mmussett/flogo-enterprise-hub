@@ -2,7 +2,9 @@
 
 ## Activity myActivity
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dapibus molestie elit, in maximus justo sagittis ut. Aenean id placerat mi, vel aliquet quam. Vivamus at sollicitudin ligula, vel accumsan est. Etiam imperdiet elit quis nunc facilisis, ut sodales diam tincidunt. Donec sit amet feugiat metus. In convallis dictum magna a iaculis. Ut consequat magna nec nunc congue vulputate a ac felis. Etiam a commodo arcu. Donec semper urna vel facilisis suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+
+
+
 
 ## Settings
 
@@ -12,8 +14,8 @@ The Settings tab has the following fields:
 | Field	| Type | Required	| Description |
 |-------|------|-----------|-------------|
 	
-| fieldName1 | string | true | Lorum ipsum |	
-| fieldName2 | number | true | Lorum ipsum |
+| fieldName1 | string | true | Lorem ipsum dolor sit amet |	
+| fieldName2 | number | true | Lorem ipsum dolor sit amet |
 
 ### Input Settings
 
@@ -21,7 +23,9 @@ The Input tab has the following fields:
 
 | Field	| Type | Required	| Description |
 |-------|------|-----------|-------------|
-| anInput  | string | yes | a string field  |
+	
+| inputField1 | string | true | Lorem ipsum dolor sit amet |	
+| inputField2 | number | true | Lorem ipsum dolor sit amet |
 
 
 
@@ -35,7 +39,9 @@ The Output Settings tab has the following field:
 
 | Field	| Type | Description |
 |-------|-----------|-------------|
-| anOutput  | string | a string field  |
+	
+| outputField1 | string | Lorem ipsum dolor sit amet |	
+| outputField2 | boolean | Lorem ipsum dolor sit amet |
 
 
 ## Loop
