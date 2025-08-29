@@ -16,6 +16,20 @@
 	"handler": {
 		"settings": [
 
+        {
+            "name": "filepath",
+            "type": "string",
+            "required": true,
+            "description": "Filepath of file to monitor for changes",
+            "value":"Default_Value",
+            "display": {
+                "name": "filepath",
+                "description": "Filepath of file to monitor for changes",
+                "required": true,
+                "type":"string",
+                "appPropertySupport": true
+            }
+        }
 		]
 	},
  	"outputs": [

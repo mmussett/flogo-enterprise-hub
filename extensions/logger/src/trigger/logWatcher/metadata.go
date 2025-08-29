@@ -7,11 +7,14 @@ import (
 type Settings struct {
 	
 	
-    Filepath string `md:"filepath,required"`
+    Recorddelim string `md:"recordDelim,required"`
 	
 }
 type HandlerSettings struct {
-
+	
+	
+    Filepath string `md:"filepath,required"`
+	
 }
 
 type Output struct {
