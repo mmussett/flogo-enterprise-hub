@@ -23,11 +23,11 @@
             "name": "fieldName1",
             "type": "string",
             "required": true,
-            "description": "This is my description",
+            "description": "fieldName1 is the first settings field",
             "value":"Default_Value",
             "display": {
                 "name": "fieldName1",
-                "description": "This is my description",
+                "description": "fieldName1 is the first settings field",
                 "required": true,
                 "type":"string",
                 "appPropertySupport": true
@@ -37,11 +37,11 @@
             "name": "fieldName2",
             "type": "number",
             "required": true,
-            "description": "sfsfsdf",
+            "description": "fieldName2 is the second settings field",
             "value":"Default_Value",
             "display": {
                 "name": "fieldName2",
-                "description": "sfsfsdf",
+                "description": "fieldName2 is the second settings field",
                 "required": true,
                 "type":"number",
                 "appPropertySupport": true
