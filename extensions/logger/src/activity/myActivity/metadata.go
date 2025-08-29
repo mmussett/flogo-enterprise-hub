@@ -36,13 +36,17 @@ type Output struct {
 func (i *Input) FromMap(values map[string]interface{}) error {
 	var err error
 
-	
+
+
+	// inputField1 {{o.fieldType}} 
 	
 	i. Inputfield1, err = coerce.ToString(values["inputField1"])
 	
 	if err != nil {
 		return err
-	}	
+	}
+
+	// inputField2 {{o.fieldType}} 
 	
 	i. Inputfield2, err = coerce.ToString(values["inputField2"])
 	
@@ -67,13 +71,15 @@ func (i *Input) ToMap() map[string]interface{} {
 func (o *Output) FromMap(values map[string]interface{}) error {
 	var err error
 
-	
+
+	// outputField1 {{o.fieldType}} 	
 	
 	o. Outputfield1, err = coerce.ToString(values["outputField1"])
 	
 	if err != nil {
 		return err
-	}	
+	}
+	// outputField2 {{o.fieldType}} 	
 	
 	o. Outputfield2, err = coerce.ToString(values["outputField2"])
 	
