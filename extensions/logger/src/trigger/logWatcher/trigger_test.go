@@ -1,4 +1,4 @@
-package 
+package logWatcher
 
 import "os"
 

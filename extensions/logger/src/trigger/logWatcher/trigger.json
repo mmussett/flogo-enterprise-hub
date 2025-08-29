@@ -16,26 +16,12 @@
 	"handler": {
 		"settings": [
 
-        {
-            "name": "handlerField1",
-            "type": "string",
-            "required": true,
-            "description": "Handler field1",
-            "value":"Default_Value",
-            "display": {
-                "name": "handlerField1",
-                "description": "Handler field1",
-                "required": true,
-                "type":"string",
-                "appPropertySupport": 
-            }
-        }
 		]
 	},
  	"outputs": [
 
         {
-           "name": "changes",
+           "name": "outputField1",
            "type": "string",
            "required": true
         }

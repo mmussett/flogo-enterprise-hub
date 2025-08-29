@@ -5,19 +5,19 @@ import (
 )
 
 type Settings struct {
-
+	
+	
+    Filepath string `md:"filepath,required"`
+	
 }
 type HandlerSettings struct {
-	
-	
-    Handlerfield1 string `md:"handlerField1,required"`
-	
+
 }
 
 type Output struct {
 	
 	
-    Changes string `md:"changes,required"`
+    Outputfield1 string `md:"outputField1,required"`
 	
 }
 
@@ -25,7 +25,7 @@ func (o *Output) ToMap() map[string]interface{} {
 	
 	return map[string]interface{}{
 
-		"changes": o.Changes,		
+		"outputField1": o.Outputfield1,		
 	}
 }
 
@@ -33,9 +33,9 @@ func (o *Output) FromMap(values map[string]interface{}) error {
 	var err error
 
 
-	// changes string 	
+	// outputField1 string 	
 	
-	o. Changes, err = coerce.ToString(values["changes"])
+	o. Outputfield1, err = coerce.ToString(values["outputField1"])
 	
 	if err != nil {
 		return err
