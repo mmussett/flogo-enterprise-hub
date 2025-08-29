@@ -42,7 +42,7 @@ func (i *Input) ToMap() map[string]interface{} {
 
 	return map[string]interface{}{
 
-		"Inputfield1": i.inputField1,
+		"inputField1": i.Inputfield1,
 	}
 
 }
