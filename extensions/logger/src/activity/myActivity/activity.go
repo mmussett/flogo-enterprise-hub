@@ -47,10 +47,16 @@ func (a *Activity) Eval(ctx activity.Context) (done bool, err error) {
 	if err != nil {
 		return true, err
 	}
+	ctx.Logger().Debugf("Input: %v", input.inputField1)
+	ctx.Logger().Debugf("Input: %v", input.inputField2)
 
-	ctx.Logger().Debugf("Input: %s", input.AnInputString)
+    // TODO: Implement your function logic here using the coerced parameters
+    // Example implementation - replace with your actual logic
 
-	output := &Output{AnOutputString: input.AnInputString}
+	output := &Output{}
+	ctx.Logger().Debugf("Output: %v", output.outputField1)
+	ctx.Logger().Debugf("Output: %v", output.outputField2)
+
 	err = ctx.SetOutputObject(output)
 	if err != nil {
 		return true, err

@@ -2,8 +2,7 @@ package  myActivity
 
 import "github.com/project-flogo/core/data/coerce"
 
-type Settings struct {
-	
+type Settings struct {	
 	
     Fieldname1 string `md:"fieldName1,required"`
 		
@@ -12,8 +11,7 @@ type Settings struct {
 	
 }
 
-type Input struct {
-	
+type Input struct {	
 	
     Inputfield1 string `md:"inputField1,required"`
 		
@@ -22,8 +20,7 @@ type Input struct {
 	
 }
 
-type Output struct {
-	
+type Output struct {	
 	
     Outputfield1 string `md:"outputField1,required"`
 		
@@ -35,8 +32,6 @@ type Output struct {
 
 func (i *Input) FromMap(values map[string]interface{}) error {
 	var err error
-
-
 
 	// inputField1 string 
 	
@@ -60,7 +55,6 @@ func (i *Input) FromMap(values map[string]interface{}) error {
 func (i *Input) ToMap() map[string]interface{} {
 
 	return map[string]interface{}{
-
 		"inputField1": i.Inputfield1,
 		"inputField2": i.Inputfield2,
 	}
@@ -70,8 +64,6 @@ func (i *Input) ToMap() map[string]interface{} {
 
 func (o *Output) FromMap(values map[string]interface{}) error {
 	var err error
-
-
 	// outputField1 string 	
 	
 	o. Outputfield1, err = coerce.ToString(values["outputField1"])
@@ -93,7 +85,6 @@ func (o *Output) FromMap(values map[string]interface{}) error {
 func (o *Output) ToMap() map[string]interface{} {
 
 	return map[string]interface{}{
-
 		"outputField1": o.Outputfield1,
 		"outputField2": o.Outputfield2,		
 	}
