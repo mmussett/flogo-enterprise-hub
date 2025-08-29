@@ -28,8 +28,9 @@ func New(ctx activity.InitContext) (activity.Activity, error) {
 	if err != nil {
 		return nil, err
 	}
-	ctx.Logger().Debugf("Input: %v", settings.Fieldname1)
-	ctx.Logger().Debugf("Input: %v", settings.Fieldname2)
+	ctx.Logger().Debugf("Setting: %v", settings.Fieldname1)
+	ctx.Logger().Debugf("Setting: %v", settings.Fieldname2)
+	
 	act := &Activity{logger: log.ChildLogger(ctx.Logger(), "logger-myActivity"), activityName: "myActivity"}
 
 	return act, nil
